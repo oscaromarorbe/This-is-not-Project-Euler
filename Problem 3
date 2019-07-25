@@ -1,0 +1,21 @@
+function isPrime(v) {
+  var prime = true;
+  for (var i = 2; i < v; i++) {
+    if (v % i === 0) {
+      prime = false;
+    }
+  }
+  return prime;
+}
+
+function primeFactor(num) {
+  var res = 0;
+  for (var i = 0; i < num; i++) {
+    if (num % i === 0 && isPrime(i) === true) {
+      res = i;
+    }
+  }
+  return res;
+}
+
+console.log(primeFactor(600851475143));
