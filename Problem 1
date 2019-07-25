@@ -1,0 +1,14 @@
+var num1 = 3;
+var num2 = 5;
+var limit = 1000;
+
+function mult(v1, vl) {
+  var it = vl / v1;
+  var total = 0;
+  for (var i = 1; i < it; i++) {
+    total += v1 * i;
+  }
+  return total;
+}
+
+console.log(mult(num1, limit)+mult(num2, limit));
